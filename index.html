@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHK Devs | Smart Digital Solutions</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Google Fonts — Syne (display) + DM Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<!-- Font Awesome — icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Main stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Scroll progress bar (top of page) -->
+<div id="progress-bar"></div>
+
+<!-- ============================================
+     MOBILE MENU — fullscreen overlay
+     ============================================ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <a href="#home"         onclick="closeMobile()">Home</a>
+  <a href="#about"        onclick="closeMobile()">About Us</a>
+  <a href="#team"         onclick="closeMobile()">Team</a>
+  <a href="#services"     onclick="closeMobile()">Services</a>
+  <a href="#portfolio"    onclick="closeMobile()">Portfolio</a>
+  <a href="#blog"         onclick="closeMobile()">Blog</a>
+  <a href="#testimonials" onclick="closeMobile()">Testimonials</a>
+  <a href="#faq"          onclick="closeMobile()">FAQ</a>
+  <a href="#contact"      onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ============================================
+     NAVBAR — sticky top navigation
+     ============================================ -->
+<nav id="navbar">
+  <div class="navbar-inner">
+    <img src="images/SHK-Logo.jpg" alt="SHK Devs Logo" class="nav-logo">
+    <ul class="nav-links">
+      <li><a href="#home"         class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <!-- Current section pill indicator (desktop only) -->
+    <span class="nav-section-pill" id="navPill">Home</span>
+    <!-- Hamburger button (mobile only) -->
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     SECTION: HOME
+     ============================================ -->
+<section id="home">
+  <div class="container">
+    <div class="hero-layout">
+
+      <!-- Left: copy & CTAs -->
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Smart Digital Solutions
+        </div>
+        <h1 class="hero-title">
+          Building the<br>
+          <span class="text-grad">Future</span> of<br>
+          the Web
+        </h1>
+        <p class="hero-desc">
+          SHK Devs is a creative development team specializing in
+          Web Development, Backend Systems, Data Analysis,
+          and AI-powered solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary" onclick="servicesAlert()">
+            <i class="fas fa-rocket"></i> Explore Services
+          </a>
+          <a href="#portfolio" class="btn btn-ghost" onclick="portfolioAlert()">
+            Our Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline" onclick="contactAlert()">
+            Get in Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">100<span>+</span></div>
+            <div class="hero-stat-label">Projects Done</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">50<span>+</span></div>
+            <div class="hero-stat-label">Happy Clients</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">10<span>yr</span></div>
+            <div class="hero-stat-label">Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: animated logo visual -->
+      <div class="hero-visual">
+        <div class="hero-logo-wrap">
+          <div class="hero-glow-bg"></div>
+          <div class="hero-ring hero-ring-1"></div>
+          <div class="hero-ring hero-ring-2"></div>
+          <img src="images/SHK-Logo.jpg" alt="SHK Devs Logo" class="hero-logo-img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: ABOUT
+     ============================================ -->
+<section id="about" class="section-pad section-edge">
+  <div class="container">
+
+    <div class="about-layout">
+
+      <!-- Left: intro text + buttons -->
+      <div class="reveal">
+        <span class="section-label">About SHK Devs</span>
+        <h2 class="display-lg" style="margin:16px 0 28px;">Who We Are</h2>
+        <div class="about-body">
+          <p>
+            SHK Devs is a creative development team specializing in Web Development,
+            Backend Systems, Data Analysis, and AI-powered solutions.
+            We focus on delivering smart, innovative, and high-quality digital products
+            that help our clients achieve their goals.
+          </p>
+        </div>
+        <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="#team"     class="btn btn-primary" onclick="teamAlert()">Meet Our Experts</a>
+          <a href="#services" class="btn btn-ghost"   onclick="solutionsAlert()">Explore Solutions</a>
+        </div>
+      </div>
+
+      <!-- Right: mission & vision cards -->
+      <div class="mission-vision-grid reveal reveal-delay-2">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+          <h4>Our Mission</h4>
+          <p>
+            To create digital solutions that empower businesses and individuals alike. With a focus on innovation,
+            reliability, and cutting-edge technology, we strive to exceed expectations in every project we deliver.
+          </p>
+        </div>
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-eye"></i></div>
+          <h4>Our Vision</h4>
+          <p>
+            To become a leading digital solutions provider recognized for transforming ideas into impactful results.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Achievements grid -->
+    <div class="achievements-section reveal">
+      <span class="section-label">Track Record</span>
+      <h2 class="display-md" style="margin-top:14px;">Our Achievements</h2>
+      <div class="achievements-grid">
+        <div class="ach-card">100+ Projects Completed</div>
+        <div class="ach-card">50+ Happy Clients</div>
+        <div class="ach-card">10 Years of Combined Experience</div>
+        <div class="ach-card">30+ Innovative Solutions</div>
+        <div class="ach-card">40+ AI Implementations</div>
+        <div class="ach-card">20+ Web Apps Delivered</div>
+        <div class="ach-card">15+ Backend Systems</div>
+        <div class="ach-card">25+ Data Analytics Projects</div>
+        <div class="ach-card">5+ Awards Won</div>
+        <div class="ach-card">35+ Clients Worldwide</div>
+        <div class="ach-card">30+ UX/UI Designs</div>
+        <div class="ach-card">50+ AI Models Developed</div>
+        <div class="ach-card">60+ APIs Integrated</div>
+        <div class="ach-card">40+ Cloud Solutions</div>
+        <div class="ach-card">20+ Blockchain Projects</div>
+        <div class="ach-card">50+ Mobile Apps</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA banner — between About and Team -->
+<div class="container cta-banner-section" style="padding-top:0;">
+  <div class="cta-banner reveal">
+    <h2>Ready to Build Something Amazing?</h2>
+    <p>Let's work together to bring your ideas to life.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn btn-primary" onclick="startProjectAlert()">Start Your Project</a>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: TEAM
+     ============================================ -->
+<section id="team" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">The People</span>
+      <h2 class="display-lg" style="margin-top:16px;">Meet Our Team</h2>
+      <p style="color:var(--t2);max-width:600px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        A passionate team combining full-stack development, artificial intelligence,
+        and strong computer science foundations to deliver smart digital solutions.
+      </p>
+    </div>
+
+    <div class="team-grid reveal">
+
+      <!-- Team member: Khaled Alzeer -->
+      <div class="team-card">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-inner">
+            <img src="images/Khaled.jpg" alt="Khaled Alzeer">
+          </div>
+        </div>
+        <div class="team-name">Khaled Alzeer</div>
+        <div class="team-role-badge">Full Stack | AI Data Security</div>
+        <p class="team-desc">
+          Specializes in building complete web solutions, integrating frontend,
+          backend, AI, and data-driven logic with clean, secure, and scalable architectures.
+        </p>
+        <div class="team-socials">
+          <a href="https://www.linkedin.com/in/khaled-alzeer-60787b322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/khaledAlzeer"                       target="_blank" aria-label="GitHub">  <i class="fab fa-github"></i></a>
+          <a href="mailto:kalzyr61@email.com"                              target="_blank" aria-label="Email">   <i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Team member: Heba Alshawish -->
+      <div class="team-card">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-inner">
+            <img src="images/Heba.jpeg" alt="Heba Alshawish">
+          </div>
+        </div>
+        <div class="team-name">Heba Alshawish</div>
+        <div class="team-role-badge">AI Data | Software Security</div>
+        <p class="team-desc">
+          Focuses on AI, machine learning, and data analysis solutions,
+          turning complex data into actionable insights and ensuring secure, efficient software.
+        </p>
+        <div class="team-socials">
+          <a href="https://www.linkedin.com/in/heba-alshawish-00962933a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/iih3b"                               target="_blank" aria-label="GitHub">  <i class="fab fa-github"></i></a>
+          <a href="mailto:hebaelyas122@gmail.com"                          target="_blank" aria-label="Email">   <i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:50px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="contactTeamAlert()">
+        <i class="fas fa-handshake"></i> Contact Our Team
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: SERVICES
+     ============================================ -->
+<section id="services" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">What We Do</span>
+      <h2 class="display-lg" style="margin-top:16px;">Our Services</h2>
+      <p style="color:var(--t2);max-width:600px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        We provide a wide range of smart digital solutions to help your business grow,
+        from web development to AI-powered systems.
+      </p>
+    </div>
+
+    <!-- Service cards grid -->
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Creating responsive, modern, and scalable websites tailored to your business needs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Mobile Apps</h3>
+        <p>Designing and developing cross-platform mobile applications with smooth UX/UI.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI Solutions</h3>
+        <p>Implementing AI &amp; machine learning models to drive smart, data-driven decisions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-database"></i></div>
+        <h3>Data Analysis</h3>
+        <p>Analyzing data to extract insights and optimize business strategies efficiently.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-cloud"></i></div>
+        <h3>Cloud Solutions</h3>
+        <p>Providing reliable cloud integration and management for scalable digital infrastructure.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Cybersecurity</h3>
+        <p>Securing your digital assets with robust cybersecurity practices and solutions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive interfaces and engaging user experiences for web and mobile apps.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Backend Systems</h3>
+        <p>Building efficient and scalable backend architectures for high-performing applications.</p>
+      </div>
+    </div>
+
+    <!-- How We Work — process steps -->
+    <div class="how-section reveal" style="margin-top:70px;">
+      <div style="text-align:center;">
+        <span class="section-label">Process</span>
+        <h2 class="display-md" style="margin-top:14px;">How We Work</h2>
+        <p style="color:var(--t2);max-width:580px;margin:12px auto 0;font-size:0.95rem;line-height:1.7;">
+          From understanding your vision to delivering high-quality solutions, we follow a clear, structured approach.
+        </p>
+      </div>
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="how-step-num">01</div>
+          <h4>Consultation</h4>
+          <p>We start by understanding your goals, requirements, and challenges in detail.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">02</div>
+          <h4>Planning</h4>
+          <p>Strategic planning and designing the best approach for your project success.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">03</div>
+          <h4>Development</h4>
+          <p>Our team executes the project with high-quality coding standards and best practices.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step-num">04</div>
+          <h4>Delivery &amp; Support</h4>
+          <p>We deliver the solution on time and provide ongoing support for seamless performance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="quoteAlert()">Get a Quote</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: PORTFOLIO
+     ============================================ -->
+<section id="portfolio" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Our Work</span>
+      <h2 class="display-lg" style="margin-top:16px;">Our Projects</h2>
+      <p style="color:var(--t2);max-width:680px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        Explore some of our best work combining innovation, technology, and design. Each project demonstrates
+        creativity, problem-solving, and practical application across web, desktop, and interactive experiences.
+      </p>
+    </div>
+
+    <!-- Projects grid -->
+    <div class="portfolio-grid reveal">
+
+      <!-- Project: Khaled Blog -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-khaled-blog.png" alt="Khaled Blog">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/BlogWithUsers" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Khaled Blog – Personal Blogging Platform</h3>
+          <p>A secure Flask-based blog where users can register, read posts, and leave comments with avatars, while the admin can create, edit, delete posts, moderate comments, and manage all content with full control.</p>
+        </div>
+      </div>
+
+      <!-- Project: Family Travel Tracker -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-family-travel-tracker.png" alt="Family Travel Tracker">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/TravelTracker" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Family Travel Tracker – Interactive Family Travel Map</h3>
+          <p>A dynamic web application to track countries visited by family members, allowing users to be added with custom colors and an interactive map highlighting visited countries per user.</p>
+        </div>
+      </div>
+
+      <!-- Project: Employee Management -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-employee-management-system.png" alt="Employee Management">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/EmployeeManagementSystem" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Employee Management – Desktop Application</h3>
+          <p>A clean and simple desktop application to manage employees, where users can add new employees, view counts by type, print employee details, and manage company information.</p>
+        </div>
+      </div>
+
+      <!-- Project: Typing Master -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-typing-master.png" alt="Typing Master">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/TypingMaster" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Typing Master – Typing Speed Test Application</h3>
+          <p>A Python and Tkinter desktop application to improve typing speed and accuracy, where users can select difficulty levels, record multiple attempts, and track Best &amp; Average WPM.</p>
+        </div>
+      </div>
+
+      <!-- Project: Breakout Arcade -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-breakout-arcade-game.png" alt="Breakout Arcade">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/BreakoutArcadegame" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Breakout Arcade – Classic Brick Game</h3>
+          <p>A Python Turtle-based desktop arcade game where players control a paddle to break multiple colorful brick rows, with smooth paddle movement, a lives system, score and high score tracking.</p>
+        </div>
+      </div>
+
+      <!-- Project: Simon Game -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-simon-game.png" alt="Simon Game">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/Simon-Game" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Simon Game – Interactive Memory Challenge</h3>
+          <p>A fun and interactive memory game where players must remember and repeat an increasingly long sequence of colors and sounds, with full keyboard and touch control support.</p>
+        </div>
+      </div>
+
+      <!-- Project: Galactic Blaster -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-galactic-blaster.png" alt="Galactic Blaster">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/Galactic-Blaster" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Galactic Blaster – 2D Space Shooter Game</h3>
+          <p>An exciting HTML5 &amp; JavaScript space shooter where players pilot a spaceship, dodge enemy attacks, and shoot foes to protect the galaxy, featuring smooth controls and glowing visual effects.</p>
+        </div>
+      </div>
+
+      <!-- Project: Interactive Drum Kit -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-interactive-drum-kit.png" alt="Interactive Drum Kit">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/Interactive-Drum-Kit" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Interactive Drum Kit – Fun Web Music App</h3>
+          <p>A fun and interactive drum kit web application where users can play different drum sounds using button clicks or keyboard presses, with a clean and colorful interface.</p>
+        </div>
+      </div>
+
+      <!-- Project: TinDog -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-tindog.png" alt="TinDog">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/TinDog" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>TinDog – Responsive Landing Page</h3>
+          <p>A modern and responsive landing page for a dog dating app, featuring a clean layout, engaging UI components, and smooth responsiveness across all screen sizes.</p>
+        </div>
+      </div>
+
+      <!-- Project: Dice Game -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-dice-game.png" alt="Dice Game">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/Dice-game" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Dice Game – Simple Web Game</h3>
+          <p>A simple and fun dice game where two dice are rolled randomly on each page refresh, instantly displaying the winner or a draw, demonstrating basic JavaScript logic and DOM manipulation.</p>
+        </div>
+      </div>
+
+      <!-- Project: Node Notes System -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-node-api-system.png" alt="Node Notes System">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/nodejs-complete-blog-api" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Node Notes System – Full Stack Web App</h3>
+          <p>A complete full-stack web application that allows users to create, edit, view, and delete notes or blog posts, showcasing smooth interaction between a backend API and a dynamic frontend interface.</p>
+        </div>
+      </div>
+
+      <!-- Project: Keeper App -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-keeper-app.png" alt="Keeper App">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/react-keeper-notes" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Keeper – Notes Application</h3>
+          <p>A clean and modern note-keeping application that allows users to quickly add, view, and delete notes in real time, with a smooth interactive experience and visually organized layout.</p>
+        </div>
+      </div>
+
+      <!-- Project: To-Do List -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-todo-list.png" alt="To-Do List">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/todo-list-app-v2" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>To-Do List – Task Manager</h3>
+          <p>A clean and user-friendly task management application that helps users organize their daily tasks, add new items, and remove completed ones with ease.</p>
+        </div>
+      </div>
+
+      <!-- Project: Book Tracker -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-capstone-book-tracker.png" alt="Book Tracker">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/BookTracker" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Book Tracker – Reading Journal</h3>
+          <p>A modern reading tracker that helps users organize their personal book collection, track reading progress, rate books, and manage their library through a clean and intuitive interface.</p>
+        </div>
+      </div>
+
+      <!-- Project: Travel Tracker -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-travel-tracker.png" alt="Travel Tracker">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/TravelTracker" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Travel Tracker – Interactive Map</h3>
+          <p>A web application that allows users to track the countries they have visited and display them on an interactive map, with custom colors and a PostgreSQL database for persistent storage.</p>
+        </div>
+      </div>
+
+      <!-- Project: Flag Quiz -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-flag-quiz.png" alt="Flag Quiz">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/FlagQuiz" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Flag Quiz – Interactive Country Quiz</h3>
+          <p>A Node.js, Express, and PostgreSQL web application where users are shown a country flag and must guess the country's name. Tracks scores and provides instant feedback.</p>
+        </div>
+      </div>
+
+      <!-- Project: World Capital Quiz -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-world-capital-quiz.png" alt="World Capital Quiz">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/WorldCapitalQuiz" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>World Capital Quiz – Educational Game</h3>
+          <p>An interactive Node.js &amp; Express educational game that tests users' knowledge of world capitals. Players see a country name and must enter its correct capital, with immediate feedback.</p>
+        </div>
+      </div>
+
+      <!-- Project: Login Web Sessions -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <img src="images/portfolio/project-login-web-sessions.png" alt="Login Web Sessions">
+          <div class="project-overlay">
+            <a href="https://github.com/khaledAlzeer/LoginWebSessions" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Login Web Sessions – Secure Authentication App</h3>
+          <p>A Node.js and Express web application demonstrating secure user authentication using sessions, PostgreSQL for user data storage, and bcrypt for password hashing.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="startProjectAlert()">
+        <i class="fas fa-rocket"></i> Start Your Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: BLOG
+     ============================================ -->
+<section id="blog" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Insights</span>
+      <h2 class="display-lg" style="margin-top:16px;">SHK Devs Blog</h2>
+      <p style="color:var(--t2);max-width:520px;margin:16px auto 0;font-size:1rem;">
+        Thoughts, tutorials, and insights about coding in different technical fields.
+      </p>
+    </div>
+
+    <!-- Blog cards grid — each has Read More toggle -->
+    <div class="blog-grid reveal">
+
+      <!-- Blog 1: Khaled — AI -->
+      <div class="blog-card" id="blog1">
+        <div class="blog-icon"><i class="fas fa-brain"></i></div>
+        <div class="blog-date">March 2023</div>
+        <h3>Accuracy vs F1 Score in Machine Learning</h3>
+        <p class="blog-summary">Accuracy alone can be misleading in imbalanced datasets.</p>
+        <p class="blog-more-text">
+          Accuracy measures the overall correctness of a machine learning model by calculating correct
+          predictions. However, it can be misleading when working with imbalanced datasets.
+          F1 Score provides a better evaluation by balancing precision and recall.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Khaled.jpg" alt="Khaled" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Khaled · AI</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog1', this)">Read More →</button>
+        </div>
+      </div>
+
+      <!-- Blog 2: Khaled — Backend -->
+      <div class="blog-card" id="blog2">
+        <div class="blog-icon"><i class="fas fa-server"></i></div>
+        <div class="blog-date">October 2023</div>
+        <h3>Building Scalable Backend Systems</h3>
+        <p class="blog-summary">Scalability is critical for modern applications.</p>
+        <p class="blog-more-text">
+          Building scalable backend systems focuses on handling increased users and data efficiently.
+          It ensures that applications continue to perform well as demand grows.
+          Scalable architectures improve reliability, flexibility, and long-term system stability.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Khaled.jpg" alt="Khaled" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Khaled · Backend</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog2', this)">Read More →</button>
+        </div>
+      </div>
+
+      <!-- Blog 3: Khaled — Data -->
+      <div class="blog-card" id="blog3">
+        <div class="blog-icon"><i class="fas fa-database"></i></div>
+        <div class="blog-date">February 2023</div>
+        <h3>Data Analysis for Modern Businesses</h3>
+        <p class="blog-summary">Data-driven decisions help organizations stay competitive.</p>
+        <p class="blog-more-text">
+          Data analysis helps modern businesses understand patterns and trends in their data.
+          It supports informed decision-making and improves operational efficiency.
+          Using data insights gives organizations a competitive advantage.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Khaled.jpg" alt="Khaled" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Khaled · Data &amp; AI</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog3', this)">Read More →</button>
+        </div>
+      </div>
+
+      <!-- Blog 4: Heba — Data Visualization -->
+      <div class="blog-card" id="blog4">
+        <div class="blog-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="blog-date">July 2023</div>
+        <h3>Data Visualization Techniques</h3>
+        <p class="blog-summary">Visualization simplifies complex data for insights.</p>
+        <p class="blog-more-text">
+          Data visualization techniques transform complex data into clear visual formats.
+          Charts and dashboards help users understand insights quickly.
+          Effective visualization supports better analysis and decision-making.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Heba.jpeg" alt="Heba" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Heba · Data</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog4', this)">Read More →</button>
+        </div>
+      </div>
+
+      <!-- Blog 5: Heba — Security -->
+      <div class="blog-card" id="blog5">
+        <div class="blog-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="blog-date">December 2023</div>
+        <h3>Introduction to Secure Coding Practices</h3>
+        <p class="blog-summary">Security should be part of the development lifecycle.</p>
+        <p class="blog-more-text">
+          Secure coding practices focus on writing code that protects applications from security
+          threats. They help prevent vulnerabilities such as SQL injection and cross-site scripting.
+          Applying secure coding improves data protection and system reliability.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Heba.jpeg" alt="Heba" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Heba · Security</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog5', this)">Read More →</button>
+        </div>
+      </div>
+
+      <!-- Blog 6: Heba — Software Testing -->
+      <div class="blog-card" id="blog6">
+        <div class="blog-icon"><i class="fas fa-code"></i></div>
+        <div class="blog-date">June 2023</div>
+        <h3>Effective Software Testing</h3>
+        <p class="blog-summary">Testing ensures software quality before production.</p>
+        <p class="blog-more-text">
+          Effective software testing ensures that applications function correctly before deployment.
+          It helps detect errors early and improves overall software quality.
+          Proper testing increases reliability and user satisfaction.
+        </p>
+        <div class="blog-author">
+          <div class="blog-author-info">
+            <div class="blog-author-avatar">
+              <img src="images/Heba.jpeg" alt="Heba" style="object-fit:cover;width:100%;height:100%;border-radius:50%;">
+            </div>
+            <span class="blog-author-name">Heba · Software Engineering</span>
+          </div>
+          <button class="read-more-btn" onclick="toggleBlog('blog6', this)">Read More →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="ctaContactAlert()">
+        Want to Work With SHK Devs?
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: TESTIMONIALS
+     ============================================ -->
+<section id="testimonials" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Social Proof</span>
+      <h2 class="display-lg" style="margin-top:16px;">What Our Clients Say</h2>
+      <p style="color:var(--t2);max-width:680px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        At SHK Devs, we value long-term partnerships and client satisfaction above everything else.
+        The feedback below reflects real experiences from clients who trusted our team to deliver
+        high-quality, scalable, and secure digital solutions.
+      </p>
+    </div>
+
+    <!-- Testimonials grid — 3 columns -->
+    <div class="testimonials-grid reveal">
+
+      <!-- Testimonial: Emma (4 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The project was delivered on time with excellent quality. I highly recommend SHK Devs for any software development needs.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/ec/43/2c/ec432cebaa9c0fbc10e99d8bd2c11e46.jpg" alt="Emma"></div>
+          <div><div class="testi-name">Emma</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Ethan (5 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">SHK Devs delivered a high-quality system with excellent performance. The team was professional and very supportive throughout the project.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/1a/8d/f5/1a8df53ecbf517fb629fd94b447462a8.jpg" alt="Ethan"></div>
+          <div><div class="testi-name">Ethan</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Sofia (5 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Working with SHK Devs was a smooth and professional experience. They delivered a high-quality system that added real value to our business.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/6d/eb/86/6deb86e669d45537bb84933d55488b22.jpg" alt="Sofia"></div>
+          <div><div class="testi-name">Sofia</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Amina (3 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">SHK Devs provided a solid solution for our business. The experience was good overall and met our expectations.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/a7/a1/a0/a7a1a080112241bae122544c0a13749b.jpg" alt="Amina"></div>
+          <div><div class="testi-name">Amina</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Jason (4 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">SHK Devs delivered a well-structured solution for our business. The team was professional and easy to work with.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/f8/59/db/f859dbe63ef023c378f6654d65b9243a.jpg" alt="Jason"></div>
+          <div><div class="testi-name">Jason</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Henry (5 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The project was handled efficiently and met our expectations. SHK Devs made the collaboration simple and clear.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/ee/bb/29/eebb2936be4e3a9e6ad15081c73ae3e4.jpg" alt="Henry"></div>
+          <div><div class="testi-name">Henry</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Tony (4 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The system delivered was clear, functional, and useful for our daily work. SHK Devs showed professionalism throughout the project.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/fa/26/04/fa2604d5a479475fe94e1ab12824375f.jpg" alt="Tony"></div>
+          <div><div class="testi-name">Tony</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Brian (5 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The solution met our expectations and helped improve our workflow. SHK Devs handled the project in an organized and professional way.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/37/cb/44/37cb44725381b3417d4fbd855028f0d3.jpg" alt="Brian"></div>
+          <div><div class="testi-name">Brian</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+      <!-- Testimonial: Alice (4 stars) -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The project was handled efficiently with clear communication. We were satisfied with the overall results and delivery.</p>
+        <div class="testi-bottom">
+          <div class="testi-avatar"><img src="https://i.pinimg.com/736x/bd/32/97/bd32972020d5e78a7432a6eaabbab341.jpg" alt="Alice"></div>
+          <div><div class="testi-name">Alice</div><div class="testi-label">Business Owner</div></div>
+          <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="ctaContactAlert()">
+        Ready to Join Our Happy Clients?
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: FAQ
+     ============================================ -->
+<section id="faq" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Questions</span>
+      <h2 class="display-lg" style="margin-top:16px;">Frequently Asked Questions</h2>
+      <p style="color:var(--t2);max-width:620px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        Here you can find answers to the most common questions about SHK Devs,
+        our services, workflow, and how we help clients build powerful digital solutions.
+      </p>
+    </div>
+
+    <!-- FAQ 2-column grid -->
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <div class="faq-q">What services does SHK Devs provide?</div>
+        <div class="faq-a">We offer web development, backend systems, UI/UX design, and custom software solutions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does a project usually take?</div>
+        <div class="faq-a">Project timelines vary depending on scope, but most projects take between 2 to 8 weeks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide ongoing support?</div>
+        <div class="faq-a">Yes, we offer maintenance and support after project delivery to ensure smooth performance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I request custom features?</div>
+        <div class="faq-a">Absolutely. We tailor every solution to meet the specific needs of each client.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you work with startups?</div>
+        <div class="faq-a">Yes, we love helping startups turn their ideas into real, scalable products.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How can I get a quote?</div>
+        <div class="faq-a">You can contact us through the Contact page, and we will get back to you quickly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why should I choose SHK Devs?</div>
+        <div class="faq-a">We focus on quality, clear communication, and delivering solutions that help businesses grow and succeed.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide documentation and training?</div>
+        <div class="faq-a">Yes, we deliver clear documentation and can provide basic training if needed.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do you communicate during the project?</div>
+        <div class="faq-a">We keep regular communication through email, meetings, and progress updates.</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" onclick="faqContactAlert()">Still Have Questions?</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================
+     SECTION: CONTACT
+     ============================================ -->
+<section id="contact" class="section-pad section-edge">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="display-lg" style="margin-top:16px;">Let's Build Together</h2>
+      <p style="color:var(--t2);max-width:520px;margin:16px auto 0;font-size:1rem;line-height:1.7;">
+        Have a project in mind or need expert digital solutions?
+        We'd love to hear from you. Let's build something amazing together.
+      </p>
+    </div>
+
+    <div class="contact-layout reveal">
+
+      <!-- Left: contact info cards + social links -->
+      <div>
+        <div class="contact-info-stack">
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">contact@shkdevs.com</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><a href="tel:+962791139710">+962 79 113 9710</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Amman, Jordan</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-info-label">Working Hours</div>
+              <div class="contact-info-value">Sun – Thu | 9:00 AM – 6:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <p style="font-size:0.77rem;color:var(--t2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">Connect with us</p>
+          <div class="social-row">
+            <a href="https://wa.me/962791139710"                target="_blank" class="social-btn whatsapp"  aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="social-btn linkedin"  aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:contact@shkdevs.com"                                class="social-btn email-btn" aria-label="Email">   <i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project inquiry...">
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="sendMessageAlert()" style="width:100%;justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer>
+  <p>&copy; <span id="year"></span> SHK Devs. All rights reserved.</p>
+</footer>
+
+<!-- Main JavaScript file -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
