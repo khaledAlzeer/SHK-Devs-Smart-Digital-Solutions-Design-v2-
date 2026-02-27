@@ -10,7 +10,7 @@
 
 ## 🌐 Live Website
 
-**[🔗 https://khaledAlzeer.github.io/SHK-Devs-v2](https://khaledAlzeer.github.io/SHK-Devs-v2)**
+**[🔗 View Live Website](https://khaledalzeer.github.io/SHK-Devs-Smart-Digital-Solutions-Design-v2-/)**
 
 ---
 
